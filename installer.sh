@@ -71,10 +71,17 @@ function main() {
     install_cmake
     install_zeromq
     install_cppzmq
+    install_pyzmq_python3
     if [ "$1" == "--clean-after" ]; then
         rm -rf cmake-3.2.2* libzmq/ cppzmq/
     fi
 }
+
+function install_pyzmq_python3() {
+    sudo python3 -m pip install pyzmq
+}
+
+
 
 # // =============================
 # Main
