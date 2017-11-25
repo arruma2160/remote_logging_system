@@ -1,2 +1,4 @@
 logclient
 logserver
+*.swp
+*.o
