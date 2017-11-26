@@ -38,7 +38,7 @@ class Client:
 
 # Configuring client.
 client = Client()
-client.set_filter(b"B")
+client.set_filter(b"DEBUG")
 client.connect()
 
 while True:

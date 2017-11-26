@@ -6,7 +6,7 @@ int main (void)
     void *context = zmq_ctx_new ();
     void *subscriber = zmq_socket (context, ZMQ_SUB);
     zmq_connect (subscriber, "tcp://localhost:2222");
-    zmq_setsockopt (subscriber, ZMQ_SUBSCRIBE, "B", 1);
+    zmq_setsockopt (subscriber, ZMQ_SUBSCRIBE, "ERROR", 1);
 
     while (1) {
         //  Read envelope with address
